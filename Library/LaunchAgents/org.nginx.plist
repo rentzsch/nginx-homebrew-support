@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+	<key>Disabled</key>
+	<false/>
+    <key>Label</key>
+    <string>org.nginx</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>LaunchOnlyOnce</key>
+    <true/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/sbin/nginx</string>
+        <string>-g</string>
+        <string>daemon off;</string>
+        <string>-c</string>
+        <string>/Library/Nginx/Configuration/nginx.conf</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/usr/local</string>
+	<key>StandardErrorPath</key>
+	<string>/Library/Nginx/stderr.log</string>
+    <!--
+    <key>UserName</key>
+    <string>_www</string>
+	<key>GroupName</key>
+	<string>_www</string>
+	-->
+  </dict>
+</plist>
+
