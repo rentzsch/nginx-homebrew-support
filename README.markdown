@@ -49,4 +49,3 @@ Nginx Configuration      |  `/Library/Nginx/Configuration/`
 Website Content (HTML)   |  `/Library/Nginx/Sites/default-site/html/`
 Site-Specific Log Files  |  `/Library/Nginx/Sites/default-site/logs/`
 Nginx PID file           |  `/usr/local/var/run/nginx.pid`
-Newsyslog Configuration  |  `/etc/newsyslog.d/nginx.conf`
