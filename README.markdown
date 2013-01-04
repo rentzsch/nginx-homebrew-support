@@ -33,9 +33,9 @@ Installation
 
 Make sure you have nginx already installed: execute `brew update && brew install nginx` if you haven't.
 
-Double-click `install.command`. It will:
+Run `cd path/to/nginx-homebrew-support; ruby install.rb`. It will:
 
-* Creates & populates `/Library/Nginx` if it doesn't already exist.
+* Creates & populate `/Library/Nginx` if it doesn't already exist.
 * Copies `org.nginx.plist` into `/Library/LaunchAgents`.
 	* Invokes `launchctl` to immediately register the nginx LaunchAgent and start nginx.
 
