@@ -9,13 +9,6 @@ if !File.exist?('/Library/Nginx')
   puts '*** Populating /Library/Nginx'
   require 'fileutils'
   FileUtils.cp_r(Dir['Library/Nginx/*'],'/Library/Nginx')
-  
-  #FileUtils.cp_r(Dir['/usr/local/etc/nginx/*'],'/Library/Nginx/Configuration')
-  require 'pathname'
-  nginxBinPath = Pathname.new('/usr/local/sbin/nginx').realpath
-  nginxDirPath = nginxBinPath.parent.parent.to_s
-  
-  #`touch /usr/local/var/run/nginx.pid` # in case nginx hasn't been ever run yet
 else
   puts '*** /Library/Nginx already exists'
 end
