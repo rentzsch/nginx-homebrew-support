@@ -35,7 +35,11 @@ Make sure you have nginx already installed: execute `brew update && brew install
 
 Run `cd path/to/nginx-homebrew-support; ruby install.rb`. It will:
 
-* Creates & populate `/Library/Nginx` if it doesn't already exist.
+* Creates & populates `/Library/Nginx` if it doesn't already exist.
+	* Provides a working OS X-tuned minimal configuration file (and support for reverse proxies).
+	* Scripts, in the form of double-clickable .command files, to easily start, stop and reload nginx.
+	* A sensible dir structure geared towards multiple sites (a site's html dir next to its logs dir).
+	* Good error reporting: nginx stderr goes to `/Library/Nginx/stderr.log`, server-wide error reporting to `/Library/Nginx/error.log` and site-specific errors to `/Library/Nginx/Sites/$site-dir/logs/error.log`
 * Copies `org.nginx.plist` into `/Library/LaunchAgents`.
 	* Invokes `launchctl` to immediately register the nginx LaunchAgent and start nginx.
 
