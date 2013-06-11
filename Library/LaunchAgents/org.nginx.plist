@@ -14,7 +14,7 @@
     <true/>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/sbin/nginx</string>
+        <string>/usr/local/bin/nginx</string>
         <string>-g</string>
         <string>daemon off;</string>
         <string>-c</string>
